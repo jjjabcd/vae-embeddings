@@ -25,6 +25,8 @@ param_file = os.path.join(cmd_args['directory'], cmd_args['params_file'])
 print(f'Reading parameters from {param_file}')
 Args = json.loads(open(param_file).read(), object_pairs_hook=OrderedDict)
 
+import util
+util.Args = Args
 
 print('############### data loading ######################')
 #data_dir = 'data/'

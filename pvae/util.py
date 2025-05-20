@@ -65,14 +65,11 @@ def text2dict_zinc(data_list, properties = None):
     data_train = defaultdict(list)
     data_test = defaultdict(list)
 
-    #print(os.path.join(data_dir, data_list[0]))
-    #print(os.path.join(data_dir, data_list[1]))
-    #train_df = pd.read_csv(os.path.join(data_dir, data_list[0]))
-    #test_df = pd.read_csv(os.path.join(data_dir, data_list[1]))
-    print(data_list[0])
-    print(data_list[1])
-    train_df = pd.read_csv(data_list[0])
-    test_df = pd.read_csv(data_list[1])
+    data_dir = Args['data_dir']  # params.json에서 data_dir 가져오기
+    print(os.path.join(data_dir, data_list[0]))
+    print(os.path.join(data_dir, data_list[1]))
+    train_df = pd.read_csv(os.path.join(data_dir, data_list[0]))
+    test_df = pd.read_csv(os.path.join(data_dir, data_list[1]))
     print('Train:', train_df.shape[0])
     print('Test:', test_df.shape[0])
     

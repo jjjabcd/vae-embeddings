@@ -1,5 +1,5 @@
 {
-    "data_dir": "../../data/zinc/",
+    "data_dir": "../data/zinc",
     "data_list": ["zinc_250k_train.csv", "zinc_250k_test.csv"],
     "gpu_exist": true,
     "device_id": 0,

@@ -1,4 +1,4 @@
-name: vae-emb
+name: pvae
 channels:
   - rdkit
   - conda-forge

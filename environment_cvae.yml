@@ -1,15 +1,17 @@
-name: chemvae
+name: cvae
 channels:
   - rdkit
   - conda-forge
   - defaults
 dependencies:
-  - numpy=1.19.2
+  - python=3.7
+  - numpy=1.19.5
   - pandas=1.1.5
   - pip=21.1.3
-  - python=3.6.13
   - rdkit=2020.09.1.0
   - scikit-learn=0.24.2
   - scipy=1.5.2
-  - tensorflow=1.10.0
-  - tensorflow-gpu=1.10.0
+  - tensorflow=1.15.0
+  - tensorflow-gpu=1.15.0
+  - pyyaml=5.4.1
+  - keras=2.2.4

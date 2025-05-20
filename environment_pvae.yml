@@ -1,7 +1,7 @@
 name: pvae
 channels:
-  - rdkit
   - conda-forge
+  - rdkit
   - defaults
 dependencies:
   - matplotlib=3.4.2
@@ -18,3 +18,9 @@ dependencies:
   - tensorflow=1.14.0
   - tensorflow-gpu=1.14.0
   - tqdm=4.61.2
+  - pytorch=1.7.1
+  - cudatoolkit=10.1
+  - pip:
+    - torch==1.7.1+cu101
+    - torchvision==0.8.2+cu101
+    - -f https://download.pytorch.org/whl/torch_stable.html
